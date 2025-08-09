@@ -1,0 +1,65 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    padding: 10px;
+}
+
+h1 {
+    color: #333;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    max-width: 600px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 150px;
+}
+
+.bio {
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: white; /* Changed from #1e90ff to white for contrast */
+    background-color: #007BFF;
+    padding:8px 12px;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+a:hover {
+    background-color: #0056b3;
+}
+.cta-btn {
+    background-color: #28a745; /* Green */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cta-btn:hover {
+    background-color: #218838;
+}
+/* Mobile-first layout already active by default */
+@media (min-width: 600px) {
+    .card {
+        flex-direction: row;
+        max-width: 800px;
+    }
+}
